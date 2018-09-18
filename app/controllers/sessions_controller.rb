@@ -9,7 +9,6 @@ class SessionsController < ActionController::Base
     else
       session[:name] = params[:name]
       redirect_to '/'
-      
     end
   end
   
