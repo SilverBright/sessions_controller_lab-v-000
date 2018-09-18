@@ -8,7 +8,8 @@ class SessionsController < ActionController::Base
     if session[:username] == []
       redirect_to '/login'
     else
-    redirect_to '/'
+      redirect_to '/'
+    end
   end
   
   def destroy
