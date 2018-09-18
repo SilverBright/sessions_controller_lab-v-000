@@ -4,7 +4,7 @@ class SessionsController < ActionController::Base
   end
   
   def create
-    if session[:name] == nil
+    if params[:name] == nil
       redirect_to '/login'
     else
       session[:name] = params[:name]
