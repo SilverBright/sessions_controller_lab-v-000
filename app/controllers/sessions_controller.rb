@@ -8,7 +8,7 @@ class SessionsController < ActionController::Base
     if session[:username] == nil
       redirect_to '/login'
     else
-      session[:username] = params[:username]
+      # session[:username] = params[:username]
       redirect_to '/'
       
     end
