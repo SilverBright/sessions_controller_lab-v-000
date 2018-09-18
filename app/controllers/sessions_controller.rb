@@ -17,7 +17,7 @@ class SessionsController < ActionController::Base
       redirect_to "/"
     else
       session[:name] = nil
-      
+      redirect_to "/"
     end
   end
     
