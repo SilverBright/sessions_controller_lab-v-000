@@ -14,7 +14,7 @@ class SessionsController < ActionController::Base
   end
   
   def destroy
-    session.delete :username
+    session.delete :name
   end
   
 end
