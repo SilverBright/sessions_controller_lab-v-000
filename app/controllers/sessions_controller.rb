@@ -8,7 +8,9 @@ class SessionsController < ActionController::Base
     if session[:username] == nil
       redirect_to '/login'
     else
+      session
       redirect_to '/'
+      
     end
   end
   
