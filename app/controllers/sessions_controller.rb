@@ -21,5 +21,4 @@ class SessionsController < ActionController::Base
     end
   end
     
-    
 end
