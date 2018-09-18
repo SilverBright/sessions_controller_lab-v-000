@@ -9,6 +9,7 @@ class SessionsController < ActionController::Base
   end
   
   def destroy
+    session.delete :username
   end
   
 end
