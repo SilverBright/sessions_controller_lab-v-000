@@ -13,10 +13,7 @@ class SessionsController < ActionController::Base
   end
   
   def destroy
-     if session[:name].nil?
-      redirect_to "/"
-    else
-      session[:name] = nil
+     if session[:name].nil? ||  session[:name] = nil
       redirect_to "/"
     end
   end
